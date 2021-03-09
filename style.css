@@ -1,0 +1,36 @@
+body {
+    background-color: green;
+}
+
+.card{
+    margin:3rem 30%;
+    width: 350px;
+    height: 500px;
+    background: white;
+    border-radius: 40px;
+    position:absolute;
+    border: 2px solid black;
+}
+#number{
+    margin-top: 35%;
+    text-align: center;
+    font-size: 200px;
+}
+.card:before{
+position: absolute;
+top:5px;
+left:5px;
+font-size:130px;
+}
+.card:after{
+position: absolute;
+bottom:5px;
+right:5px;
+font-size:130px;
+transform-origin:50%;
+transform:rotate(180deg);
+}
+.card.spade:before, .card.spade:after{content:'\2660'; }
+.card.club:before, .card.club:after{content:'\2663'; }
+.card.hearts:before, .card.hearts:after{content:'\2665';color:red; }
+.card.diams:before, .card.diams:after{content:'\2666';color:red; }
